@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+   
+        <style>
+            .filterDiv {
+  font-size: 10px;
+  display: none;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.container {
+  overflow: hidden;
+}
+.show {
+  display: block;
+  font-size: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 2;
+}
+
+        </style>
+</head>
+<body>
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> All publications</button>
+        <button class="btn" onclick="filterSelection('dipolar')"> Dipolar condensates</button>
+        <button class="btn" onclick="filterSelection('vortices')"> 3D Vortices</button>
+        <button class="btn" onclick="filterSelection('multi')"> Multicomponent</button>
+        <button class="btn" onclick="filterSelection('berezinskii')"> Berezinskii Kosterlitz Thouless</button>
+    </div>
+    <br>
+    <div class="container">
+
+    <div class="filterDiv dipolar">
+    <ol reversed>
+        <li><span>Au-Chen Lee, D. Baillie, P. B.
+                Blakie, </span>R. N. Bisset<span>, Miscibility and stability of
+                dipolar bosonic mixtures, </span><a href="https://arxiv.org/abs/2103.03425"><span>arXiv:2103.03425
+                    (2021)</span></a></li>
+        <li ><span>Matthew A. Norcia, Claudia
+                Politi, Lauritz Klaus, Elena Poli, Maximilian Sohmen, Manfred J. Mark, </span>Russell
+            Bisset<span>, Luis Santos, Francesca Ferlaino, Two-dimensional
+                supersolidity in a dipolar quantum gas, </span><a
+                href="https://arxiv.org/abs/2102.05555"><span>arXiv:2102.05555 (2021)</span></a></li>
+        <li >R. N. Bisset<span>,
+            </span><span>L. A. Peña Ardila</span><span>,
+            </span><span>L. Santos, Quantum droplets of dipolar mixtures, </span><a
+                href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.025301"><span>Phys. Rev. Lett.
+                </span>126<span>,
+                    025301 (2021)</span></a></li>
+        <li ><span>L. Tanzi, E. Lucioni, F. Famà,
+                J. Catani, A. Fioretti, C. Gabbanini, </span>R. N. Bisset<span>, L.
+                Santos, G. Modugno, Observation of a dipolar quantum gas with metastable supersolid properties,
+            </span><a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.122.130405"><span>Phys. Rev. Lett.
+                </span>122<span>,
+                    130405 (2019)</span></a><span> [Featured in Physics: Viewpoint]
+                [Editors' Suggestion]</span></li>
+        <li >R. N. Bisset<span>, P. B.
+                Blakie, and S. Stringari, Static-response theory and the roton-maxon spectrum of a flattened dipolar
+                Bose-Einstein condensate, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.100.013620"><span>Phys. Rev. A
+                </span>100<span>, 013620
+                    (2019)</span></a><span> [Editors' Suggestion]</span></li>
+        <li ><span>Au-Chen Lee, D. Baillie,
+            </span>R. N. Bisset<span>, P. B. Blakie, Excitations of a vortex line
+                in an elongated dipolar condensate, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.98.063620"><span>Phys. Rev. A </span>98<span>,
+                    063620
+                    (2018)</span></a></li>
+        <li ><span>D. Baillie, R. M. Wilson,
+            </span>R. N. Bisset<span>, and P. B. Blakie, Self-bound dipolar
+                droplet: A localized matter wave in free space, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.94.021602"><span>Phys. Rev. A </span>94<span>,
+                    021602(R) (2016)</span></a><span> [Editor's Suggestion]</span></li>
+        <li >R. N. Bisset<span>, R. M.
+                Wilson, D. Baillie, P. B. Blakie, Ground state phase diagram of a dipolar condensate with quantum
+                fluctuations, </span><a href="http://journals.aps.org/pra/abstract/10.1103/PhysRevA.94.033619"><span>Phys.
+                    Rev. A </span>94<span>, 033619
+                    (2016)</span></a></li>
+        <li >R. N. Bisset<span>, P. B.
+                Blakie, Crystallization of a dilute atomic dipolar condensate, </span><a
+                href="http://journals.aps.org/pra/abstract/10.1103/PhysRevA.92.061603"><span>Phys. Rev. A </span>92<span>,
+                    061603
+                    - Rapid Communication (2015)</span></a></li>
+        <li ><span>D. Baillie, </span>R. N.
+            Bisset<span> and P. B. Blakie, Stability of a trapped dipolar quantum
+                gas, </span><a href="http://journals.aps.org/pra/abstract/10.1103/PhysRevA.91.013613"><span>Phys. Rev. A
+                </span>91<span>, 013613
+                    (2015)</span></a><span> </span></li>
+        <li ><span>D. Baillie, </span>R. N.
+            Bisset<span>, C. Ticknor and P. B. Blakie, Number Fluctuations of a
+                Dipolar Condensate: Anisotropy and Slow Approach to the Thermodynamic Regime, </span><a
+                href="http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.113.265301"><span>Phys. Rev. Lett.
+                </span>113<span>,
+                    265301 (2014)</span></a></li>
+        <li >R. N. Bisset<span> and P. B.
+                Blakie, Fingerprinting Rotons in a Dipolar Condensate: Super-Poissonian Peak in the Atom-Number
+                Fluctuations, </span><a
+                href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.110.265302"><span>Phys. Rev. Lett.
+                </span>110<span>,
+                    265302 (2013)</span></a></li>
+        <li >R. N. Bisset<span>, C.
+                Ticknor, and P. B. Blakie, Finite-resolution fluctuation measurements of a trapped Bose-Einstein
+                condensate, </span><a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.063624"><span>Phys.
+                    Rev. A </span>88<span>, 063624
+                    (2013)</span></a></li>
+        <li >R. N. Bisset<span>, D.
+                Baillie, and P. B. Blakie, Roton excitations in a trapped dipolar Bose-Einstein condensate,
+            </span><a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.043606"><span>Phys. Rev. A
+                </span>88<span>, 043606
+                    (2013)</span></a></li>
+        <li ><span>P. B. Blakie, D. Baillie, and
+            </span>R. N. Bisset<span>, Depletion and fluctuations of a trapped
+                dipolar Bose-Einstein condensate in the roton regime, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.013638"><span>Phys. Rev. A </span>88<span>,
+                    013638
+                    (2013)</span></a></li>
+        <li >R. N. Bisset<span>, D.
+                Baillie, and P. B. Blakie, Finite-temperature trapped dipolar Bose gas, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.86.033609"><span>Phys. Rev. A </span>86<span>,
+                    033609
+                    (2012)</span></a></li>
+        <li ><span>P. B. Blakie, D. Baillie, and
+            </span>R. N. Bisset<span>, Roton spectroscopy in a harmonically trapped
+                dipolar Bose-Einstein condensate, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.86.021604"><span>Phys. Rev. A </span>86<span>,
+                    021604
+                    - Rapid Communication (2012)</span></a></li>
+        <li >R. N. Bisset<span>, D.
+                Baillie, and P. B. Blakie, Finite-temperature stability of a trapped dipolar Bose gas, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.83.061602"><span>Phys. Rev. A 83, 061602 -
+                    Rapid Communication (2011)</span></a></li>
+    </ol>
+    </div>
+    
+    <div class="filterDiv berezinskii">
+    <ol reversed>
+        <li>R. N. Bisset<span>, M. J.
+                Davis, T. P. Simula, and P. B. Blakie, Quasicondensation and coherence in the quasi-two-dimensional
+                trapped Bose gas, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.79.033626"><span>Phys. Rev. A </span>79<span>,
+                    033626
+                    (2009)</span></a></li>
+        <li>R. N. Bisset<span>, D.
+                Baillie, and P. B. Blakie, Analysis of the Holzmann-Chevallier-Krauth theory for the trapped
+                quasi-two-dimensional Bose gas, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.79.013602"><span>Phys. Rev. A </span>79<span>,
+                    013602
+                    (2009)</span></a></li>
+        <li>R. N. Bisset<span> and P. B.
+                Blakie, Quantitative test of the mean-field description of a trapped two-dimensional Bose gas,
+            </span><a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.80.045603"><span>Phys. Rev. A
+                </span>80<span>, 045603
+                    (2009)</span></a></li>
+        <li>
+            R. N. Bisset<span> and P. B. Blakie, Transition region properties of a trapped
+                quasi-two-dimensional degenerate Bose gas, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.80.035602"><span>Phys. Rev. A
+                </span>80<span>, 035602 (2009)</span></a>
+    
+        </li>
+    </ol>
+    </div>
+
+    
+    
+<div class="filterDiv vortices">
+    <ol reversed>
+        <li ><span>Au-Chen Lee, D. Baillie, R. N. Bisset,
+                P. B. Blakie, Excitations of a vortex line in an elongated dipolar condensate, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.98.063620"><span>Phys. Rev. A 98, 063620
+                    (2018)</span></a></li>
+        <li ><span>F. Dalfovo, R. N. Bisset, C. Mordini,
+                G. Lamporesi and G. Ferrari, Optical visibility and core structure of vortex filaments in a bosonic
+                superfluid, </span><a href="https://link.springer.com/article/10.1134/S1063776118110018"><span>JETP 127 804
+                    (2018)</span></a></li>
+        <li ><span>R. N. Bisset, S. Serafini, E. Iseni, M.
+                Barbiero, T. Bienaimé, G. Lamporesi, G. Ferrari, F. Dalfovo, Observation of a Spinning Top in a
+                Bose-Einstein Condensate, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.96.053605"><span>Phys. Rev. A 96, 053605
+                    (2017)</span></a><span>
+                [Featured in Physics: Synopsis] [Editors' Suggestion]</span></li>
+        <li ><span>Wenlong Wang, R. N. Bisset, C. Ticknor,
+                R. Carretero-Gonzalez, D. J. Frantzeskakis, L. A. Collins, P. G. Kevrekidis, Single and Multiple Vortex
+                Rings in Three-Dimensional Bose-Einstein Condensates: Existence, Stability and Dynamics, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.95.043638"><span>Phys. Rev. A 95, 043638
+                    (2017)</span></a><span> </span></li>
+        <li ><span>Simone Serafini, Luca Galantucci, Elena
+                Iseni, Tom Bienaimé, R. N. Bisset, Carlo F. Barenghi, Franco Dalfovo, Giacomo Lamporesi and Gabriele
+                Ferrari, Vortex reconnections and rebounds in trapped atomic Bose-Einstein condensates, </span><a
+                href="https://journals.aps.org/prx/abstract/10.1103/PhysRevX.7.021031"><span>Phys.
+                    Rev. X 7, 021031 (2017)</span></a><span> </span></li>
+        <li ><span>R. N. Bisset, Wenlong Wang, C. Ticknor,
+                R. Carretero-Gonzalez, D. J. Frantzeskakis, L. A. Collins, P. G. Kevrekidis, Robust Vortex Lines, Vortex
+                Rings and Hopfions in 3D Bose-Einstein Condensates, </span><a
+                href="http://journals.aps.org/pra/abstract/10.1103/PhysRevA.92.063611"><span>Phys.
+                    Rev. A 92, 063611 (2015)</span></a></li>
+        <li ><span>R. N. Bisset, Wenlong Wang, C. Ticknor, R. Carretero-González, D. J.
+                Frantzeskakis, L. A.
+                Collins, and P. G. Kevrekidis, Bifurcation and stability of single and multiple vortex rings in
+                three-dimensional Bose-Einstein condensates, </span><a
+                href="http://journals.aps.org/pra/abstract/10.1103/PhysRevA.92.043601"><span>Phys. Rev. A 92, 043601
+                    (2015)</span></a></li>
+    </ol>
+    </div>
+  
+    <div class="filterDiv multi">
+    <ol reversed>
+        <li ><span>Au-Chen Lee, D.
+                Baillie, P. B. Blakie, R. N. Bisset, Miscibility and stability of dipolar bosonic mixtures,
+            </span><a href="https://arxiv.org/abs/2103.03425"><span>arXiv:2103.03425 (2021)</span></a></li>
+        <li ><span>R. N. Bisset, L. A.
+                Peña Ardila, L. Santos, Quantum droplets of dipolar mixtures, </span><a
+                href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.025301"><span>Phys. Rev. Lett. 126,
+                    025301 (2021)</span></a></li>
+        <li ><span>R. N. Bisset, P. G.
+                Kevrekidis, C. Ticknor, Enhanced quantum spin fluctuations in a binary Bose-Einstein
+                condensate, </span><a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.97.023602"><span>Phys.
+                    Rev. A 97, 023602 (2018)</span></a><span> </span></li>
+        <li ><span>R. N. Bisset, R. M.
+                Wilson and C. Ticknor, Scaling of fluctuations in a trapped binary condensate, </span><a
+                href="http://journals.aps.org/pra/abstract/10.1103/PhysRevA.91.053613"><span>Phys. Rev. A 91 053613
+                    (2015)</span></a></li>
+    </ol>
+    </div>
+    <div class="filterDiv allpapers">
+    <ol reversed>
+        <li><span>Au-Chen Lee, D. Baillie, P. B. Blakie, </span>R. N. <span>, Miscibility and
+                stability of dipolar bosonic mixtures, </span><a
+                href="https://arxiv.org/abs/2103.03425"><span>arXiv:2103.03425 (2021)</span></a></li>
+        <li><span>Matthew A. Norcia, Claudia Politi, Lauritz Klaus, Elena Poli, Maximilian Sohmen, Manfred J.
+                Mark, </span>Russell <span>, Luis Santos, Francesca Ferlaino, Two-dimensional supersolidity in
+                a dipolar quantum gas, </span><a href="https://arxiv.org/abs/2102.05555"><span>arXiv:2102.05555
+                    (2021)</span></a></li>
+        <li>R. N. <span>, </span><span>L. A. Peña Ardila</span><span>, </span><span>L. Santos,
+                Quantum droplets of dipolar mixtures, </span><a
+                href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.025301"><span>Phys. Rev.
+                    Lett. </span><span>, 025301 (2021)</span></a></li>
+        <li><span>L. Tanzi, E. Lucioni, F. Famà, J. Catani, A. Fioretti, C. Gabbanini, </span>R. N.
+                <span>, L. Santos, G. Modugno, Observation of a dipolar quantum gas with metastable supersolid
+                properties, </span><a
+                href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.122.130405"><span>Phys. Rev.
+                    Lett. </span><span>, 130405 (2019)</span></a><span> [Featured in Physics: Viewpoint] [Editors'
+                Suggestion]</span></li>
+        <li>R. N. <span>, P. B. Blakie, and S. Stringari, Static-response theory and the
+                roton-maxon spectrum of a flattened dipolar Bose-Einstein condensate, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.100.013620"><span>Phys. Rev.
+                    A </span><span>, 013620 (2019)</span></a><span> [Editors' Suggestion]</span></li>
+        <li><span>Au-Chen Lee, D. Baillie, </span>R. N. <span>, P. B. Blakie, Excitations of a
+                vortex line in an elongated dipolar condensate, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.98.063620"><span>Phys. Rev.
+                    A </span><span>, 063620 (2018)</span></a></li>
+        <li><span>F. Dalfovo, </span>R. N. <span>, C. Mordini, G. Lamporesi and G. Ferrari,
+                Optical visibility and core structure of vortex filaments in a bosonic superfluid, </span><a
+                href="https://link.springer.com/article/10.1134/S1063776118110018"><span>JETP </span><span> 804
+                    (2018)</span></a></li>
+        <li>R. N. <span>, P. G. Kevrekidis, C. Ticknor, Enhanced quantum spin fluctuations in a
+                binary Bose-Einstein condensate, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.97.023602"><span>Phys. Rev.
+                    A </span><span>, 023602 (2018)</span></a></li>
+        <li>R. N. <span>, S. Serafini, E. Iseni, M. Barbiero, T. Bienaimé, G. Lamporesi, G.
+                Ferrari, F. Dalfovo, Observation of a Spinning Top in a Bose-Einstein Condensate, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.96.053605"><span>Phys. Rev.
+                    A </span><span>, 053605 (2017)</span></a><span> [Featured in Physics: Synopsis] [Editors'
+                Suggestion]</span></li>
+        <li><span>Wenlong Wang, </span>R. N. <span>, C. Ticknor, R. Carretero-Gonzalez, D. J.
+                Frantzeskakis, L. A. Collins, P. G. Kevrekidis, Single and Multiple Vortex Rings in Three-Dimensional
+                Bose-Einstein Condensates: Existence, Stability and Dynamics, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.95.043638"><span>Phys. Rev.
+                    A </span><span>, 043638 (2017)</span></a></li>
+        <li><span>Simone Serafini, Luca Galantucci, Elena Iseni, Tom Bienaimé, </span>R. N.
+                <span>, Carlo F. Barenghi, Franco Dalfovo, Giacomo Lamporesi and Gabriele Ferrari, Vortex
+                reconnections and rebounds in trapped atomic Bose-Einstein condensates, </span><a
+                href="https://journals.aps.org/prx/abstract/10.1103/PhysRevX.7.021031"><span>Phys. Rev.
+                    X </span><span>, 021031 (2017)</span></a></li>
+        <li><span>D. Baillie, R. M. Wilson, </span>R. N. <span>, and P. B. Blakie, Self-bound
+                dipolar droplet: A localized matter wave in free space, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.94.021602"><span>Phys. Rev.
+                    A </span><span>, 021602 - Rapid Communication (2016)</span></a><span> [Editors'
+                Suggestion]</span></li>
+        <li>R. N. <span>, R. M. Wilson, D. Baillie, P. B. Blakie, Ground state phase diagram of
+                a dipolar condensate with quantum fluctuations, </span><a
+                href="http://journals.aps.org/pra/abstract/10.1103/PhysRevA.94.033619"><span>Phys. Rev.
+                    A </span><span>, 033619 (2016)</span></a></li>
+        <li>R. N. <span>, P. B. Blakie, Crystallization of a dilute atomic dipolar
+                condensate, </span><a href="http://journals.aps.org/pra/abstract/10.1103/PhysRevA.92.061603"><span>Phys.
+                    Rev. A </span><span>, 061603 - Rapid Communication (2015)</span></a></li>
+        <li>R. N. <span>, Wenlong Wang, C. Ticknor, R. Carretero-Gonzalez, D. J. Frantzeskakis,
+                L. A. Collins, P. G. Kevrekidis, Robust Vortex Lines, Vortex Rings and Hopfions in 3D Bose-Einstein
+                Condensates, </span><a href="http://journals.aps.org/pra/abstract/10.1103/PhysRevA.92.063611"><span>Phys.
+                    Rev. A </span><span>, 063611 (2015)</span></a></li>
+        <li>R. N. <span>, Wenlong Wang, C. Ticknor, R. Carretero-González, D. J. Frantzeskakis,
+                L. A. Collins, and P. G. Kevrekidis, Bifurcation and stability of single and multiple vortex rings in
+                three-dimensional Bose-Einstein condensates, </span><a
+                href="http://journals.aps.org/pra/abstract/10.1103/PhysRevA.92.043601"><span>Phys. Rev.
+                    A </span><span>, 043601 (2015)</span></a></li>
+        <li><span>D. Baillie, </span>R. N. <span> and P. B. Blakie, Stability of a trapped
+                dipolar quantum gas, </span><a
+                href="http://journals.aps.org/pra/abstract/10.1103/PhysRevA.91.013613"><span>Phys. Rev.
+                    A </span><span>, 013613 (2015)</span></a></li>
+        <li>R. N. <span>, R. M. Wilson and C. Ticknor, Scaling of fluctuations in a trapped
+                binary condensate, </span><a
+                href="http://journals.aps.org/pra/abstract/10.1103/PhysRevA.91.053613"><span>Phys. Rev.
+                    A </span><span> 053613 (2015)</span></a></li>
+        <li><span>D. Baillie, </span>R. N. <span>, C. Ticknor and P. B. Blakie, Number
+                Fluctuations of a Dipolar Condensate: Anisotropy and Slow Approach to the Thermodynamic Regime, </span><a
+                href="http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.113.265301"><span>Phys. Rev.
+                    Lett. </span><span>, 265301 (2014)</span></a></li>
+        <li>R. N. <span> and P. B. Blakie, Fingerprinting Rotons in a Dipolar Condensate:
+                Super-Poissonian Peak in the Atom-Number Fluctuations, </span><a
+                href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.110.265302"><span>Phys. Rev.
+                    Lett. </span><span>, 265302 (2013)</span></a></li>
+        <li>R. N. <span>, C. Ticknor, and P. B. Blakie, Finite-resolution fluctuation
+                measurements of a trapped Bose-Einstein condensate, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.063624"><span>Phys. Rev.
+                    A </span><span>, 063624 (2013)</span></a></li>
+        <li>R. N. <span>, D. Baillie, and P. B. Blakie, Roton excitations in a trapped dipolar
+                Bose-Einstein condensate, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.043606"><span>Phys. Rev.
+                    A </span><span>, 043606 (2013)</span></a></li>
+        <li><span>P. B. Blakie, D. Baillie, and </span>R. N. <span>, Depletion and fluctuations
+                of a trapped dipolar Bose-Einstein condensate in the roton regime, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.013638"><span>Phys. Rev.
+                    A </span><span>, 013638 (2013)</span></a></li>
+        <li>R. N. <span>, D. Baillie, and P. B. Blakie, Finite-temperature trapped dipolar Bose
+                gas, </span><a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.86.033609"><span>Phys. Rev.
+                    A </span><span>, 033609 (2012)</span></a></li>
+        <li><span>P. B. Blakie, D. Baillie, and </span>R. N. <span>, Roton spectroscopy in a
+                harmonically trapped dipolar Bose-Einstein condensate, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.86.021604"><span>Phys. Rev. A 86, 021604 -
+                    Rapid Communication (2012)</span></a></li>
+        <li>R. N. <span>, D. Baillie, and P. B. Blakie, Finite-temperature stability of a
+                trapped dipolar Bose gas, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.83.061602"><span>Phys. Rev. A 83, 061602 -
+                    Rapid Communication (2011)</span></a></li>
+        <li>R. N. <span>, M. J. Davis, T. P. Simula, and P. B. Blakie, Quasicondensation and
+                coherence in the quasi-two-dimensional trapped Bose gas, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.79.033626"><span>Phys. Rev.
+                    A </span><span>, 033626 (2009)</span></a></li>
+        <li>R. N. <span>, D. Baillie, and P. B. Blakie, Analysis of the
+                Holzmann-Chevallier-Krauth theory for the trapped quasi-two-dimensional Bose gas, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.79.013602"><span>Phys. Rev.
+                    A </span><span>, 013602 (2009)</span></a></li>
+        <li>R. N. <span> and P. B. Blakie, Quantitative test of the mean-field description of a
+                trapped two-dimensional Bose gas, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.80.045603"><span>Phys. Rev.
+                    A </span><span>, 045603 (2009)</span></a></li>
+        <li>R. N. <span> and P. B. Blakie, Transition region properties of a trapped
+                quasi-two-dimensional degenerate Bose gas, </span><a
+                href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.80.035602"><span>Phys. Rev.
+                    A </span><span>, 035602 (2009)</span></a>
+                    </div>
+
+    </div>
+
+    
+    
+<script>
+filterSelection("allpapers")
+
+    function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "allpapers") c = "";
+        for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+    }
+
+    function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+        }
+    }
+
+    function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+        }
+        element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+
+</script>
+</body>
+</html>
